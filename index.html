@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><img src="Знімок екрана 2023-12-14 134558.png" alt="logo-тістечка та тортики"></header>
+    <main>
+        <nav>
+            <div class="calRenge">
+                <label for="calories">Калорій у порції:</label>
+                <input type="range" id="calories" name="calories" min="0" max="1000" value="600">
+                <label for="calories">Від 0 до 600 кКал</label>
+            </div>
+            <label for="pyrig" class="filtrType">Пиріг</label>
+            <label for="tistechko" class="filtrType">Тістечко</label>
+            <label for="rulet" class="filtrType">Рулет</label>
+            <label for="tort" class="filtrType">Торт</label>
+            <label for="syrnyk" class="filtrType">Сирник</label>
+            <label for="resetFiltr" class="filtrType">Скинути фільтр</label>
+        </nav>
+        <input type="radio" name="filtr" id="pyrig">
+        <input type="radio" name="filtr" id="tistechko">
+        <input type="radio" name="filtr" id="rulet">
+        <input type="radio" name="filtr" id="tort">
+        <input type="radio" name="filtr" id="syrnyk">
+        <input type="radio" name="filtr" id="resetFiltr" checked>
+
+        <div id="dessert">
+            <div class="recipes tistechko">
+                <img src="/mussovoe-pyrozhnoe-zymnyaya-vyshnya-qeqb8fgm8itskq5a4rb4uearl2gtnhsw0j6me947xo.jpg"
+                    alt="Тістечко мусове">
+                <div class="info">
+                    <p>Тістечко:</p>
+                    <p><strong>Мусове сердечко</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 340 кКал</p>
+            </div>
+
+            <div class="recipes rulet">
+                <img src="/shutterstock_1635570151_1608911226-scaled.jpg" alt="Шоколадний рулет">
+                <div class="info">
+                    <p>Рулет:</p>
+                    <p><strong>Шоколад в шоколаді</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 590 кКал</p>
+            </div>
+
+            <div class="recipes syrnyk">
+                <img src="/1sirniki.png" alt="Сирники з малиною">
+                <div class="info">
+                    <p class="">Сирники:</p>
+                    <p><strong>Малинка</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 290 кКал</p>
+            </div>
+
+            <div class="recipes pyrig">
+                <img src="/klasichniy-vishneviy-pirig-6404d6df87ea4744717877.jpg" alt="Вишневий пиріг">
+                <div class="info">
+                    <p>Пиріг:</p>
+                    <p><strong>Класична вишня</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 473 кКал</p>
+            </div>
+
+            <div class="recipes tort">
+                <img src="/pyshnyi-morkvianyi-tort-z-horikhamy-i-smetannym-kremom.webp" alt="Морквяний торт">
+                <div class="info">
+                    <p>Торт:</p>
+                    <p><strong>Вершково-морквяний</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 567 кКал</p>
+            </div>
+
+            <div class="recipes tort">
+                <img src="/mussovoe-pyrozhnoe-zymnyaya-vyshnya-qeqb8fgm8itskq5a4rb4uearl2gtnhsw0j6me947xo.jpg"
+                    alt="Торт з маршмелоу">
+                <div class="info">
+                    <p>Торт:</p>
+                    <p><strong>М'який маршмелоу</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 456 кКал</p>
+            </div>
+
+            <div class="recipes tort">
+                <img src="/f734-1_w360.webp" alt="Шпинатний торт">
+                <div class="info">
+                    <p>Торт:</p>
+                    <p><strong>ЛІсний мох</strong></p>
+                </div>
+                <hr>
+                <p class="calor">Калорії у порції 547 кКал</p>
+            </div>
+
+        <div class="recipes syrnyk">
+            <img src="/rf.webp" alt="Сирники з бананом">
+            <div class="info">
+                <p class="">Сирники:</p>
+                <p><strong>Бананові</strong></p>
+            </div>
+            <hr>
+            <p class="calor">Калорії у порції 321 кКал</p>
+        </div>
+        <div class="recipes rulet">
+            <img src="/shutterstock_1539243761_1637258026-scaled-e1637258074821-1280x640.jpg" alt="Pулет червоний бархат">
+            <div class="info">
+                <p>Рулет:</p>
+                <p><strong>Червоний бархат</strong></p>
+            </div>
+            <hr>
+            <p class="calor">Калорії у порції 478 кКал</p>
+        </div>
+    </div>
+    </main>
+    <hr>
+    <footer>
+        <p>Контакти: <a href="mailto:tortik@smakota.ua">tortik@smakota.ua</a></p>
+        <p>@ 2019 Smakota</p>
+    </footer>
+</body>
+
+</html>

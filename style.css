@@ -1,0 +1,240 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    background-color: #F1DEDE;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.464);
+    text-align: center;
+}
+
+.calRenge {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.filtrType {
+    cursor: pointer;
+    background-color: #D496A7;
+    margin: 5px;
+    padding: 10px 20px;
+    color: #413C4C;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+#dessert {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.recipes {
+    display: flex;
+    background-color: #F1DEDE;
+    flex-wrap: wrap;
+    /* flex: 0 0 31%; */
+    border-radius: 5px;
+    color: #413C4C;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.464);
+    margin: 10px;
+    display: none;
+    width: 400px;
+}
+
+.recipes img {
+    width: 150px;
+    height: 105px;
+    margin: 10px 10px 0px 10px;
+}
+
+
+.recipes hr {
+    opacity: 60%;
+    width: 100%;
+    height: 0.3px;
+    display: flex;
+    align-self: flex-end;
+
+}
+
+.recipes .calor {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px 0px 20px 10px;
+}
+
+.recipes .info {
+    font-size: 20px;
+    margin-left: 5px
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+
+
+.recipes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+}
+
+.filtrType:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+}
+
+[name="filtr"]:checked+.filtrType {
+    background-color: #BA8392;
+    cursor: default;
+}
+
+main #pyrig:checked~#dessert .pyrig,
+main #tistechko:checked~#dessert .tistechko,
+main #rulet:checked~#dessert .rulet,
+main #tort:checked~#dessert .tort,
+main #syrnyk:checked~#dessert .syrnyk,
+main #resetFiltr:checked~#dessert .recipes {
+    display: flex;
+}
+
+@media  (max-width: 1199px) {
+
+    .recipes .calor,
+    .recipes hr,
+    .calRenge {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        display: grid;
+        background-color: unset;
+        flex-direction: row;
+        box-shadow: none;
+        order: unset;
+        min-height: fit-content;
+        grid-template-columns: 33% 33% 33% ;
+    }
+
+    #dessert {
+        justify-content: space-around;
+    }
+
+    .recipes {
+        margin: 5px;
+        flex: 0 0 30%;
+    }
+
+    .recipes img {
+        width: 250px;
+        height: auto;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .recipes .info {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .recipes img {
+        width: 350px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+    .recipes .info {
+        display: none;
+    }
+
+    #dessert{
+        flex-direction: column;
+        align-content: center;
+
+    }
+    .recipes {
+        background-color: unset;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    .recipes img  {
+        display: flex;
+        height: auto;
+       margin: 5px;
+       padding: 0;
+       border-radius: 15px;
+    }
+    .recipes img:active {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    }
+    .recipes:hover {
+        transform:none;
+        box-shadow:none;
+    }
+
+    nav{
+        grid-template-columns: auto auto;
+    }
+    header img{
+       width:350px;
+    }
+
+    header{
+        margin-bottom: 0;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
